@@ -29,14 +29,15 @@ public class FreivaldsAlgorithm {
         int N = matrix.length;
         int[] vector = new int[N];
 
-        for(int i = 0; i < N; i++)
+        for (int i = 0; i < N; i++){
             for (int j = 0; j < N; j++) {
                 vector[i] += v[j] * matrix[i][j];
                 counter += 2;
             }
+            counter -=1;
+        }
 
         return vector;
-
     }
 
     // Freivalds' algorithm is a probabilistic randomized algorithm used to verify

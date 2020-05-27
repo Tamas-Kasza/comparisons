@@ -12,6 +12,7 @@ public class MultiplyMatrices {
                     product[i][j] += firstMatrix[i][k] * secondMatrix[k][j];
                     counter += 2;
                 }
+                counter -=1;
             }
         }
 
