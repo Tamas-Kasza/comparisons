@@ -13,7 +13,7 @@ public class EvaluateMatrixMultiplication implements IBase {
     Long[] fRuns;
     Long[] mRuns;
 
-    public EvaluateMatrixMultiplication(Integer minMatrixSize, Integer maxMatrixSize, Integer numOfRuns, Integer stepSize) throws Exception {
+    public EvaluateMatrixMultiplication(Integer minMatrixSize, Integer maxMatrixSize, Integer numOfRuns, Integer stepSize) {
         this.minMatrixSize = minMatrixSize;
         this.maxMatrixSize = maxMatrixSize;
         this.numOfRuns = numOfRuns;
@@ -25,7 +25,7 @@ public class EvaluateMatrixMultiplication implements IBase {
 
     public void run(int size) {
         FreivaldsAlgorithm f = new FreivaldsAlgorithm();
-        MultiplyMatrices m = new MultiplyMatrices();;
+        MultiplyMatrices m = new MultiplyMatrices();
 
         int[][] firstMatrix = new int[size][size];
         int[][] secondMatrix = new int[size][size];
@@ -33,8 +33,8 @@ public class EvaluateMatrixMultiplication implements IBase {
         for(int i=0;i<size;i++)
         {
             for(int j=0;j<size;j++){
-                firstMatrix[i][j] = SortHeleper.random.nextInt(9);
-                secondMatrix[i][j] = SortHeleper.random.nextInt(9);
+                firstMatrix[i][j] = SortHeleper.random.nextInt(10);
+                secondMatrix[i][j] = SortHeleper.random.nextInt(10);
             }
         }
 
@@ -47,7 +47,7 @@ public class EvaluateMatrixMultiplication implements IBase {
     }
 
     @Override
-    public void doWork() throws Exception {
+    public void doWork() {
         for (int i = minMatrixSize ; i < maxMatrixSize + 1; i+=stepSize) {
             System.out.println("calculating round: "+i);
             run(i);
@@ -55,7 +55,7 @@ public class EvaluateMatrixMultiplication implements IBase {
     }
 
     @Override
-    public void doWorkAndBenchmarkTime() throws Exception {}
+    public void doWorkAndBenchmarkTime() {}
 
     @Override
     public String getName() {
