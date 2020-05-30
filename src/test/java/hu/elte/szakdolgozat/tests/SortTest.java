@@ -96,22 +96,6 @@ public class SortTest {
         Assert.assertTrue(test.isArrayinAscOrder());
     }
 
-//    @Test
-    public void testArrShuffles() throws Exception {
-
-        int number = 5;
-        QuickSort test = new QuickSort();
-        test.setArray(fillArray(5));
-        ArrayList<Integer[]> list =  test.arrShuffles(number);
-        for(int i=0;i<number;i++){
-            Integer[] x = list.get(i);
-            for(int j=0;j<x.length;j++){
-                System.out.print(x[j]);
-            }
-            System.out.println(" ");
-        }
-    }
-
     @Test
     public void ascOrderTest() throws Exception {
 
@@ -137,6 +121,5 @@ public class SortTest {
                 }
             }
         }
-
     }
 }
