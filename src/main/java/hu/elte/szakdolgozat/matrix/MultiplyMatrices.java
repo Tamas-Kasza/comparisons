@@ -15,7 +15,6 @@ public class MultiplyMatrices {
                 counter -=1;
             }
         }
-
         return product;
     }
 

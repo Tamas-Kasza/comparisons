@@ -10,7 +10,6 @@ import static hu.elte.szakdolgozat.SortHeleper.CounterType.*;
 import static hu.elte.szakdolgozat.SortHeleper.*;
 import static hu.elte.szakdolgozat.math.MathHelper.log2;
 import static java.lang.Math.log;
-import static java.lang.Thread.sleep;
 
 public abstract class SortBase implements IBase {
     protected static Integer arr[];

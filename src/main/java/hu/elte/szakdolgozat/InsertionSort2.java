@@ -1,8 +1,5 @@
 package hu.elte.szakdolgozat;
 
-import static hu.elte.szakdolgozat.SortHeleper.CounterType.COMPARISONS;
-import static hu.elte.szakdolgozat.SortHeleper.CounterType.MOVES;
-
 public class InsertionSort2 extends SortBase{
 
     public InsertionSort2(Integer minListLength, Integer maxListLength, Integer numOfRuns, Integer stepSize) throws Exception {

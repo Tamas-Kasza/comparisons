@@ -1,8 +1,5 @@
 package hu.elte.szakdolgozat;
 
-import static hu.elte.szakdolgozat.SortHeleper.CounterType.SELECTIONS;
-import static java.lang.Math.log;
-
 public class SelectionSort extends SortBase{
 
     public SelectionSort(Integer minListLength, Integer maxListLength, Integer numOfRuns, Integer stepSize) throws Exception {

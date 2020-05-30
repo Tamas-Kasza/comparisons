@@ -1,7 +1,5 @@
 package hu.elte.szakdolgozat;
 
-import static hu.elte.szakdolgozat.SortHeleper.CounterType.COMPARISONS;
-
 public class QuickSort extends SortBase{
     private boolean randomize = false;
 
