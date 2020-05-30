@@ -19,16 +19,6 @@ public class MultiplyMatrices {
         return product;
     }
 
-    public static void displayProduct(int[][] product) {
-        System.out.println("Product of two matrices is: ");
-        for(int[] row : product) {
-            for (int column : row) {
-                System.out.print(column + "    ");
-            }
-            System.out.println();
-        }
-    }
-
     public Long getCounter() {
         return counter;
     }
