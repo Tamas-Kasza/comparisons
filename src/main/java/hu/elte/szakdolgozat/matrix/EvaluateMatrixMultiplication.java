@@ -38,7 +38,6 @@ public class EvaluateMatrixMultiplication implements IBase {
             }
         }
 
-        // Mutliplying Two matrices
         int[][] product = m.multiplyMatrices(firstMatrix, secondMatrix, size, size, size);
         mRuns[size-1] = m.getCounter();
 
