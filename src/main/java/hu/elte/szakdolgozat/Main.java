@@ -21,8 +21,8 @@ public class Main {
         directory.mkdirs();
 
         if(args.length != 5){
-            System.out.printf("[ver: %s] usage: java -jar sort.jar [minListLength] [maxListLength] [numOfRuns] [stepsize] [mode]", VERSION);
-            System.out.printf("1:mmul, 2:sorting, 3:sorting time, 4:mfproblema, 5:qsort, 6:knn, 7:selftest");
+            System.out.printf("[ver: %s] \nusage: java -jar comparisons-1.0-SNAPSHOT-shaded.jar [minListLength] [maxListLength] [numOfRuns] [stepsize] [mode]", VERSION);
+            System.out.printf("\n1:matrix mul, 2:sorting, 3:sorting time, 4:mfproblema, 5:qsort, 6:SelectNthElement, 7:selftest");
             return;
         }
 
@@ -79,7 +79,7 @@ public class Main {
                     exportToFile(tests,"diff", VERSION, DIFF2);
                     break;
                 case 6:
-                    //knn abra
+                    //5 fejezet abra
                     tests.add(new PrintPredictions(minListLength,maxListLength,numOfRuns,stepSize,3));
                     tests.add(new SelectNthElement(minListLength,maxListLength,numOfRuns,stepSize));
                     tests.add(new PrintPredictions(minListLength,maxListLength,numOfRuns,stepSize,4));
